@@ -9,4 +9,5 @@ public class ProjectResponse {
     private String name;
     private String version;
     private String current;
+    private String profile;
 }
