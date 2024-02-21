@@ -11,9 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class HealthController {
 
-    @GetMapping
-    public ResponseEntity<String> check() {
-        log.info("Check health!");
-        return ResponseEntity.ok("Running");
+    @GetMapping("live")
+    public ResponseEntity<String> liveness() {
+        log.info("Check health, live!");
+        return ResponseEntity.ok("live!");
+    }
+
+    @GetMapping("ready")
+    public ResponseEntity<String> readiness() {
+        log.info("Check health, ready!");
+        return ResponseEntity.ok("ready!");
     }
 }
