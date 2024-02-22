@@ -1,5 +1,5 @@
 #!/bin/bash
-name=cronosdev.azurecr.io/cronos/app/global
+name=cronosdevacr.azurecr.io/cronos/app/global
 version=1.0.0
 
 docker image build -t ${name}:${version} .
