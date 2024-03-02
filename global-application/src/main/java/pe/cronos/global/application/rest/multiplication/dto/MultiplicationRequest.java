@@ -1,4 +1,4 @@
-package pe.cronos.global.application.rest.subtraction.dto;
+package pe.cronos.global.application.rest.multiplication.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @ToString
-public class SubtractionRequest {
+public class MultiplicationRequest {
     private Integer scale;
     private BigDecimal a;
     private BigDecimal b;

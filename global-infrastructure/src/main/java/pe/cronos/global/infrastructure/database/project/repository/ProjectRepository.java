@@ -8,7 +8,7 @@ public class ProjectRepository {
 
     public ProjectEntity getProjectInfo() {
         ProjectEntity projectEntity = new ProjectEntity();
-        projectEntity.setName("Subtraction Project");
+        projectEntity.setName("Multiplication Project");
         projectEntity.setVersion("1.0.0");
 
         return projectEntity;
