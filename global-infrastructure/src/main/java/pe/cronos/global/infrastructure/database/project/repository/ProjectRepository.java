@@ -8,7 +8,7 @@ public class ProjectRepository {
 
     public ProjectEntity getProjectInfo() {
         ProjectEntity projectEntity = new ProjectEntity();
-        projectEntity.setName("Urano");
+        projectEntity.setName("Addition Project");
         projectEntity.setVersion("1.0.0");
 
         return projectEntity;
