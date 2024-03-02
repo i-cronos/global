@@ -1,4 +1,4 @@
 server:
   port: 8080
   servlet:
-    context-path: /add-app
+    context-path: /subtract-app
