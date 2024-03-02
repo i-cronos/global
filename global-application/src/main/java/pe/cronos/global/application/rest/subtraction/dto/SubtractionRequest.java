@@ -1,13 +1,15 @@
-package pe.cronos.global.application.rest.addition.dto;
+package pe.cronos.global.application.rest.subtraction.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 
 @Getter
 @Setter
-public class AdditionRequest {
+@ToString
+public class SubtractionRequest {
     private Integer scale;
     private BigDecimal a;
     private BigDecimal b;
