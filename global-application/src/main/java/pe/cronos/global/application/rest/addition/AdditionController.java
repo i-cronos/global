@@ -24,10 +24,14 @@ public class AdditionController {
 
     @PostMapping("/simple")
     public ResponseEntity<AdditionResponse> add(@RequestBody AdditionRequest additionRequest) {
+        log.info("addition request: {}", additionRequest);
         Operand operand = additionDtoMapper.map(additionRequest);
 
         OperationResult operationResult = additionUseCase.apply(operand);
+        AdditionResponse additionResponse = additionDtoMapper.map(operationResult);
 
-        return ResponseEntity.ok(additionDtoMapper.map(operationResult));
+        log.info("addition response: {}", additionResponse);
+
+        return ResponseEntity.ok(additionResponse);
     }
 }
