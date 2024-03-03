@@ -6,6 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(
         basePackages = {
+                "pe.cronos.global.container",
                 "pe.cronos.global.application",
                 "pe.cronos.global.domain",
                 "pe.cronos.global.infrastructure"
